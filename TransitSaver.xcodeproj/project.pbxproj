@@ -16,6 +16,8 @@
 		8484EE922A8AC8120012094C /* TransitSaverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484EE912A8AC8120012094C /* TransitSaverTests.swift */; };
 		8484EE9C2A8AC8120012094C /* TransitSaverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484EE9B2A8AC8120012094C /* TransitSaverUITests.swift */; };
 		8484EE9E2A8AC8120012094C /* TransitSaverUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484EE9D2A8AC8120012094C /* TransitSaverUITestsLaunchTests.swift */; };
+		84EA07BE2A8ACD8D0035B918 /* DataBaseServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA07BD2A8ACD8D0035B918 /* DataBaseServiceProtocol.swift */; };
+		84EA07C02A9463CD0035B918 /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA07BF2A9463CD0035B918 /* SettingsPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		8484EE972A8AC8120012094C /* TransitSaverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitSaverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8484EE9B2A8AC8120012094C /* TransitSaverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitSaverUITests.swift; sourceTree = "<group>"; };
 		8484EE9D2A8AC8120012094C /* TransitSaverUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitSaverUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		84EA07BD2A8ACD8D0035B918 /* DataBaseServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseServiceProtocol.swift; sourceTree = "<group>"; };
+		84EA07BF2A9463CD0035B918 /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,12 @@
 		8484EE792A8AC8110012094C /* TransitSaver */ = {
 			isa = PBXGroup;
 			children = (
+				84EA07BB2A8ACD650035B918 /* Services */,
+				84EA07B82A8ACD3D0035B918 /* Protocols */,
+				84EA07B72A8ACCA80035B918 /* Components */,
+				84EA07B62A8ACC9D0035B918 /* ViewModels */,
+				84EA07B52A8ACC910035B918 /* Views */,
+				84EA07B42A8ACC800035B918 /* Models */,
 				8484EE7A2A8AC8110012094C /* TransitSaverApp.swift */,
 				8484EE7C2A8AC8110012094C /* ContentView.swift */,
 				8484EE7E2A8AC8120012094C /* Assets.xcassets */,
@@ -133,6 +143,66 @@
 				8484EE9D2A8AC8120012094C /* TransitSaverUITestsLaunchTests.swift */,
 			);
 			path = TransitSaverUITests;
+			sourceTree = "<group>";
+		};
+		84EA07B42A8ACC800035B918 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84EA07B52A8ACC910035B918 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84EA07BF2A9463CD0035B918 /* SettingsPage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84EA07B62A8ACC9D0035B918 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		84EA07B72A8ACCA80035B918 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		84EA07B82A8ACD3D0035B918 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				84EA07BC2A8ACD6C0035B918 /* ServiceProtocols */,
+				84EA07B92A8ACD490035B918 /* ViewModelProtocols */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		84EA07B92A8ACD490035B918 /* ViewModelProtocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModelProtocols;
+			sourceTree = "<group>";
+		};
+		84EA07BB2A8ACD650035B918 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84EA07BC2A8ACD6C0035B918 /* ServiceProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				84EA07BD2A8ACD8D0035B918 /* DataBaseServiceProtocol.swift */,
+			);
+			path = ServiceProtocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +335,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EA07BE2A8ACD8D0035B918 /* DataBaseServiceProtocol.swift in Sources */,
 				8484EE842A8AC8120012094C /* Persistence.swift in Sources */,
 				8484EE7D2A8AC8110012094C /* ContentView.swift in Sources */,
+				84EA07C02A9463CD0035B918 /* SettingsPage.swift in Sources */,
 				8484EE7B2A8AC8110012094C /* TransitSaverApp.swift in Sources */,
 				8484EE872A8AC8120012094C /* TransitSaver.xcdatamodeld in Sources */,
 			);
